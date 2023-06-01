@@ -41,7 +41,7 @@ docker rmi [docker image name] # 만들어둔 도커 이미지를 제거하는 �
 docker build -t [만들고자 하는 docker image name] . # 도커 이미지 생성 명령어.
 
 # container 관련 명령어 
-docker ps -a # 현재 도커 컨테이너에 올라간 리스트를 보여준다.
+docker ps -a # 현재 도커 컨테이너에 올라간 리스트를 보여준다
 docker ps # 구동중인 컨테이너 리스트를 보여준다. 
 docker container stop [Container ID] # 구동중인 컨테이너를 중지하는 명령어.
 docker rm [Container ID] # 리스트에 올라온 도커 컨테이너를 제거하는 명령어. 
