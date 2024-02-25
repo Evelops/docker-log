@@ -1,6 +1,6 @@
 ### Docker Log
 
-#### 자주 사용하는 Docker Image, Compose LOG 
+#### 자주 사용하는 Docker Image LOG 
 
 <hr>
 <br>
