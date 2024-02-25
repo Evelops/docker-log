@@ -1,0 +1,26 @@
+
+version: "0.0.1" 
+services:
+ maria :
+    image: docker.io/bitnami/mariadb:10.6
+    container_name: mariadb-container
+    hostname: mariadb-container
+    ports:
+      - 3306:3306
+    volumes:
+      - ~/docker/mariadb/etc/mysql/conf.d:/etc/mysql/conf.d:ro
+      - ~/docker/mariadb/var/lib/mysql:/var/lib/mysql
+      - ~/docker/mariadb/var/log/maria:/var/log/maria
+    environment:
+      - TZ="Asia/Seoul"
+      - ALLOW_EMPTY_PASSWORD=no
+      - MARIADB_ROOT_PASSWORD=boiler123!!
+      - MARIADB_USER=admin
+      - MARIADB_DATABASE=boiler
+      - MARIADB_PASSWORD=boiler123!!
+    networks:
+      - backend
+    restart: always
+
+networks:
+  backend:
